@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Vitamin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8A6B2B; /* Warna latar belakang coklat */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            position: relative;
+        }
+        .vitamin-info {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .vitamin-info::before {
+            content: attr(data-number);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #4CAF50; /* Warna hijau */
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+        }
+        .vitamin-info h3 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .vitamin-info p {
+            margin: 5px 0 0;
+            font-size: 0.95em;
+        }
+        /* Garis putus-putus */
+        .dashed-line {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-image: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+            background-position: top;
+            background-size: 10px 2px;
+            background-repeat: repeat;
+        }
+        .dashed-line.line1 { top: 35px; left: 50px; width: 30%; }
+        .dashed-line.line2 { top: 35px; left: 40%; width: 30%; }
+        .dashed-line.line3 { top: 35px; left: 75%; width: 20%; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="vitamin-info" data-number="1">
+        <h3>Vitamin E</h3>
+        <p><i>Memiliki anti aging</i> yang bisa mendorong perawatan kulit alami</p>
+    </div>
+    <div class="dashed-line line1"></div>
+    <div class="vitamin-info" data-number="2">
+        <h3>Vitamin K</h3>
+        <p>Membantu <b>mencegah</b> terjadinya <i>osteoporosis</i></p>
+    </div>
+    <div class="dashed-line line2"></div>
+    <div class="vitamin-info" data-number="3">
+        <h3>Vitamin B5</h3>
+        <p>Membantu <b>menurunkan</b> tingkat stress, meringankan rasa sakit</p>
+    </div>
+    <div class="dashed-line line3"></div>
+    <div class="vitamin-info" data-number="4">
+        <h3>Vitamin B6</h3>
+        <p>Membantu <i>treat diabetes</i>, pendarahan menstruasi, insomnia</p>
+    </div>
+</div>
+
+</body>
+</html>

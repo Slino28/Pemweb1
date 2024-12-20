@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Parkir</title>
+</head>
+    <body>
+        <!-- Masuk Parkir -->
+        <label for="">Jam Masuk</label>
+        <input type="number" name="jam_masuk" id="jam_masuk">
+        <br><br>
+        <!-- Keluar -->
+        <label for="">Jam Keluar</label>
+        <input type="number" name="jam_keluar" id="jam_keluar">
+        <br>
+        <!-- Button Hitung -->
+         <button onclick="HitungBiayaParkir()">Hitung</button>
+
+         <!-- LAMA PARKIR -->
+          <p>Lama Parkir : <span id="lamaparkir"></span></p>
+
+         <!-- Hasil -->
+          <p>Biaya Parkir : <span id="biaya_parkir"></span></p>
+
+          <script src="soal.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>A Web Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-200 p-4">
+    <div class="bg-gray-400 p-2 flex items-center">
+        <button class="mr-2"><i class="fas fa-arrow-left"></i></button>
+        <button class="mr-2"><i class="fas fa-arrow-right"></i></button>
+        <button class="mr-2"><i class="fas fa-home"></i></button>
+        <input type="text" class="flex-grow border border-black px-2" placeholder="http://">
+        <button class="ml-2"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="bg-gray-300 p-2 mt-2 flex justify-center space-x-4">
+        <a href="#" class="text-black">Home</a>
+        <span>|</span>
+        <a href="#" class="text-black">Generate Link</a>
+        <span>|</span>
+        <a href="#" class="text-black">Transaction History</a>
+        <span>|</span>
+        <a href="#" class="text-black">Policy</a>
+        <span>|</span>
+        <a href="#" class="text-black">Logout</a>
+    </div>
+    <div class="mt-4 flex">
+        <div class="w-1/3 flex flex-col items-center">
+            <div class="w-48 h-48 border border-black flex items-center justify-center">
+                <span class="text-gray-500">Image Placeholder</span>
+            </div>
+            <button class="mt-2 bg-gray-300 border border-black px-4 py-1">Upload Picture</button>
+        </div>
+        <div class="w-2/3 pl-4">
+            <div class="mb-2">
+                <label class="block">Title Here :</label>
+                <input type="text" class="w-full border border-black px-2" value="MacBook Air £800">
+            </div>
+            <div class="mb-2">
+                <label class="block">Description :</label>
+                <textarea class="w-full border border-black px-2" rows="4">Year : 2009
+Model :
+Condition : Mint</textarea>
+            </div>
+            <div class="mb-2">
+                <label class="block">Account Number :</label>
+                <input type="text" class="w-full border border-black px-2" value="123-456-789-0">
+            </div>
+            <div class="mb-2">
+                <label class="block">Bank :</label>
+                <input type="text" class="w-full border border-black px-2" value="HSBC">
+            </div>
+            <div class="mb-2">
+                <label class="block">Account Holder :</label>
+                <input type="text" class="w-full border border-black px-2" value="Name Here">
+            </div>
+            <div class="mb-2">
+                <label class="block">Transaction :</label>
+                <input type="number" class="w-16 border border-black px-2" value="1">
+                <p class="text-sm mt-1">* if the transaction is for 3 person, choose 3 from the drop-down list</p>
+            </div>
+            <div class="mb-2">
+                <input type="checkbox" checked>
+                <label>Send to Mobile Phone</label>
+            </div>
+            <div class="mb-2">
+                <input type="checkbox" checked>
+                <label>Send to Email</label>
+            </div>
+            <div class="mb-2">
+                <label class="block">Send to Mobile Phone :</label>
+                <input type="text" class="w-full border border-black px-2" value="1234567890, 1234567891">
+            </div>
+            <div class="mb-2">
+                <label class="block">Send to Email :</label>
+                <input type="text" class="w-full border border-black px-2" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+            </div>
+            <button class="bg-green-500 text-white px-4 py-2 mt-2">Generate Nabr Link</button>
+        </div>
+    </div>
+</body>
+</html>

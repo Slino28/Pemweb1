@@ -1,0 +1,22 @@
+img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    list-style: none;
+}
+
+header li{
+    margin: 2px 7px;
+    margin-right: 250px;
+    color: white;
+}
+
+header{
+    background-color: rgb(63, 63, 239);
+    margin: -17px -8px;
+}
